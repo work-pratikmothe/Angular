@@ -1,0 +1,15 @@
+<div>
+    <ul>
+        @for (ticket of tickets; track ticket.id) {
+        <li>
+            <app-ticket [ticket]="ticket" (handleStatus)="handleStatus($event)"></app-ticket>
+        </li>
+        }
+        @empty {
+        <p>Please add ticket</p>
+        }
+    </ul>
+</div>
+<div id="new-ticket">
+    <app-new-ticket (submitForm)=submitForm($event) />
+</div>
