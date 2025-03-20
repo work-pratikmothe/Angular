@@ -1,0 +1,12 @@
+
+# Node
+/node_modules
+
+# Visual Studio Code
+/.vscode
+/.angular
+
+
+
+/.DS_Store
+.editorconfig
