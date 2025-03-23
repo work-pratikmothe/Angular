@@ -1,0 +1,78 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <app-navbar></app-navbar>
+    </div>
+  </div>
+  <app-message-bar></app-message-bar>
+  <div class="row mx-4 mt-3">
+    <div class="col-12 col-md-6">
+      <app-card>
+        <p class="card-title" card-title>Slack is where the future works.</p>
+        <p class="card-text" card-text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam dicta magni
+          perspiciatis ipsam quia libero officiis dolorum iusto tempora maxime, excepturi facilis dolor vitae
+          repellendus rerum sunt illo. Necessitatibus, cupiditate.
+        </p>
+
+        <div footer>
+          <a href="#" class="btn btn-primary mx-2">TRY FOR FREE</a>
+          <a href="#" class="btn btn-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-google"
+              viewBox="0 0 16 16">
+              <path
+                d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z" />
+            </svg>
+            SIGN IN WITH GOOGLE</a>
+        </div>
+      </app-card>
+    </div>
+    <div class="col-12 col-md-6 mt-2 p-4 position-relative">
+      <span class="reaction-button btn-position-left" (click)="handleClick('left')">
+        <span class="">🎉</span>
+        <span class="ms-2">{{leftCount}}</span>
+      </span>
+
+      <span class="reaction-button btn-position-top" (click)="handleClick('right')">
+        <span class="">👍</span>
+        <span class="ms-2">{{rightCount}}</span>
+      </span>
+      <span class="reaction-button btn-position-right" (click)="handleClick('top')">
+        <span class="ms-0">💡</span>
+        <span class="ms-2">{{topCount}}</span>
+      </span>
+      <span class="reaction-button btn-position-middle" (click)="handleClick('visited')">
+        <span class="">👀</span>
+        <span class="ms-2">{{visitedCount}}</span>
+      </span>
+      <!--
+       -->
+
+      <!-- <app-card>
+        <img src="/assets/img2.avif" class="card-img-top" alt="slack-img" card-img>
+      </app-card> -->
+      <img src="/assets/img2.avif" class="img-fluid rounded-2" alt="slack-img" card-img>
+    </div>
+  </div>
+  <div class="row mx-4 mt-3 p-4">
+    <div class="col-12 col-md-6 mt-2 p-4">
+      <!-- <app-card>
+                  <img src="/assets/img2.avif" class="card-img-top" alt="slack-img" card-img>
+                </app-card> -->
+      <img src="/assets/img2.avif" class="img-fluid rounded-2" alt="slack-img" card-img>
+    </div>
+    <div class="col-12 col-md-6">
+      <app-card>
+        <p class="card-title" card-title>Now is your moment to build a better tomorrow.</p>
+        <p class="card-text" card-text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam dicta magni
+          perspiciatis ipsam quia libero officiis dolorum iusto tempora maxime, excepturi facilis dolor vitae
+          repellendus rerum sunt illo. Necessitatibus, cupiditate.
+        </p>
+
+        <div footer>
+          <a href="#" class="btn btn-outline-primary mx-2">WATCH VIDEO</a>
+        </div>
+      </app-card>
+    </div>
+
+  </div>
+</div>

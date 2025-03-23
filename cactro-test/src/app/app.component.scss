@@ -1,0 +1,35 @@
+.card-title {
+  font-size: 4rem !important;
+}
+.container {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+.reaction-button {
+  display: inline-flex;
+  padding-inline: 1rem;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  height: 2rem;
+  border-radius: 25%;
+}
+
+.btn-position-left {
+  top: 60%;
+  left: -5%;
+}
+
+.btn-position-top {
+  left: 40%;
+  top: 3%;
+}
+
+.btn-position-right {
+  top: 40%;
+  right: -5%;
+}
+
+.btn-position-middle {
+  top: 70%;
+  right: 10%;
+}
